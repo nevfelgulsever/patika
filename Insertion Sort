@@ -1,0 +1,33 @@
+  1. soru   [22,27,16,2,18,6] -> Insertion Sort
+      Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+        1) önce tüm seri incelenir ve en küçük olan başa getirilir.
+            [2,27,16,22,18,6]      *22 ile 2 yer değiştirir.*
+        2) en küçük ikinci terimi bulmak için ilk terim hariç kalan terimlerden en küçük olanı ikinci terim ile yer değiştirir.
+            [2,6,16,22,18,27]      *27 ile 6 yer değiştirir.*
+        3) en küçük üçüncü terimi bulmak için ilk iki terim hariç kalan terimlerden en küçük olanı üçüncü terim ile yer değiştirir.
+            [2,6,16,22,18,27]      *üçüncü eleman  kalan serideki en küçük terim olduğu için hiçbir terimle yer değiştirmez.*
+        4) en küçük dördüncü terimi bulmak için ilk üç terim hariç kalan terimlerden en küçük olanı ile dördüncü terim ile yer değiştirir.
+            [2,6,16,18,22,27]      *22 ile 18 yer değitirir.*
+        5) en küçük beşinci terimi bulmak için ilk dört terim hariç kalan terimlerde en küçük olanı beşici terimle yer değiştirir.
+            [2,6,16,18,22,27]      *beşinci eleman kalan serideki en küçük terim olduğu için hiçbir terimle yer değiştirmez.*
+        6) en sondaki terim en büyük terim olarak ortaya çıkar.
+            [2,6,16,18,22,27]
+      Big-O gösterimini yazınız.
+          1. adımda n, 2. adımda n-1, 3. adımda n-2 ... n-1. adımda 2 tane işlem yapılır.
+          toplam yapılan işlem sayısı n+(n-1)+(n-2)+...+2=(n*(n-1)/2)-1
+          en büyük dereceli terim n^2 gelir.
+          O(n^2)=O(6^2)=O(36)
+      Time Complexity: 
+        Average case: Aradığımız sayının ortada olması,
+
+        Worst case: Aradığımız sayının sonda olması, 
+
+        Best case: Aradığımız sayının dizinin en başında olması.
+            Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
+            Average case
+ 2. soru
+       [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
+          1. [2,3,5,8,7,9,4,15,6] *2 ile 7 yer değiştirir*
+          2. [2,3,5,8,7,9,4,15,6] *3 sabit kalır*
+          3. [2,3,4,8,7,9,5,15,6] *5 ile 4 yer değiştirir*
+          4. [2,3,4,5,7,9,8,15,6] *8 ile 5 yer değiştirir.*
