@@ -1,2 +1,0 @@
-# patika
- www.patika.dev
