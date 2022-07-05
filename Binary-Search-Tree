@@ -1,0 +1,14 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+root u 4 tür.
+sol tarafa 4 ten küçükler sağ tarafa 4 ten büyükler yazılır.
+4 ün solunda 2 4 ün sağında 6 bulunur.
+
+                    4            
+                /      \
+               2        6
+              / \       / \      
+             1   3     5   8
+            /             /  \  
+           0             7    9
+www.patika.dev
